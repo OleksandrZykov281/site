@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Drink2Go</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header__logo">
+      <img src="img/Logo.png" alt="Logo" class="logo"> 
+    </div>
+    <nav class="nav">
+      <div class="nav__items">
+        <a href="#" class="nav__item active">Головна</a>
+        <a href="#" class="nav__item">Про мене</a>
+        <a href="#" class="nav__item">Моє портфоліо</a>
+      </div>
+      <div class="nav-icons">
+        <a href="#" class="nav__link account-link forma-login">
+          <img src="img/user.png" alt="Увійти">Увійти
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="slider">
+      <img src="img/Снимок экрана 2025-06-14 134057.png" alt="Декаф Флет Уайт" class="slider-image">
+      <div class="slider-content">
+        <span class="badge">Сайт підбір компанії</span>
+        <h1 class="slider-title">Сайт </h1>
+        <p class="slider-description">
+          Сайт який допомогає знайти робоче місце за допомогою тих чи інших навичок
+        </p>  
+    </section>
+
+    <section class="advantage">
+      <span class="section-badge">Переваги</span>
+      <h2 class="section-title">Мої головні якості</h2>
+      
+      <div class="advantage__grid">
+        <div class="advantage">
+          <img src="img/timer.png" alt="Швидкість" class="advantage__icon">
+          <h3 class="advantage__title">Швидкість</h3>
+          <p class="advantage__description">Виконую всі завдання швидко і якісно</p>
+        </div>
+        
+        <div class="advantage">
+          <img src="img/shield.png  " alt="Зручність" class="advantage__icon">
+          <h3 class="advantage__title">Коммунікабельність</h3>
+          <p class="advantage__description">Люблю працювати в команді та вирішувати проблеми разом</p>
+        </div>
+        
+        <div class="advantage">
+          <img src="img/thunder.png" alt="Бадьорість" class="advantage__icon">
+          <h3 class="advantage__title">Старанність</h3>
+          <p class="advantage__description">Швидко сприймаю інформацію та вчуся на своїх помилках</p>
+        </div>
+        
+        <div class="advantage">
+          <img src="img/ecology.png" alt="Екологічність" class="advantage__icon">
+          <h3 class="advantage__title">Стресостійкість</h3>
+          <p class="advantage__description">Готовий до любих складнощей</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog">
+      <div class="catalog-header">
+        <span class="section-badge">Каталог</span>
+        <h2 class="section-title">Каталог IT компаній</h2>
+        
+       <div class="sort-container">
+        <span class="sort-label">Сортування:</span>
+      <div class="sort-select sort-toggle">
+        <span class="sort-current">за замовчуванням</span>
+        <img src="img/sortline.svg" alt="Сортування">
+      </div>
+      <ul class="sort-options hidden">
+        <li data-sort="default">За замовчуванням</li>
+        <li data-sort="price-asc">За відстанню</li>
+      </ul>
+    </div>
+
+      </div>
+      <div class="catalog-content">
+        <div class="filter-container">
+          <div class="filter-section1">
+            <h3 class="filter-title1">Відстань</h3>
+            <div class="range-slider">
+              <div class="slider-track"></div>
+              <div class="slider-thumb"></div>
+              <div class="slider-thumb"></div>
+            </div>
+            <div class="price-range">
+              <input type="text" class="price-input price-input1" value="0">
+              <span class="price-separator">_</span>
+              <input type="text" class="price-input price-input2" value="900">
+            </div>
+          </div>
+  
+          <div class="filter-section2 ">
+            <h3 class="filter-title2">Відстань від мене</h3>
+            <div class="radio-group">
+              <label class="radio-option">
+                <input type="radio" name="milk" class="radio-custom" checked>
+                <span class="radio-custom"></span>
+                <span>Неважливо</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="milk">
+                <span class="radio-custom"></span>
+                <span>У вашому місті</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="milk">
+                <span class="radio-custom"></span>
+                <span>20+ кілометрів</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="milk">
+                <span class="radio-custom"></span>
+                <span>50+ кілометрів</span>
+              </label>
+            </div>
+          </div>
+  
+          <div class="filter-section3">
+            <h3 class="filter-title3">Мова програмування </h3>
+            <div class="checkbox-group">
+              <label class="checkbox-option">
+                <input type="checkbox" checked>
+                <span class="checkbox-custom"></span>
+                <span>HTML/CSS</span>
+              </label>
+              <label class="checkbox-option">
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+                <span>JS</span>
+              </label>
+              <label class="checkbox-option">
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+                <span>C++</span>
+              </label>
+              <label class="checkbox-option">
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+                <span>Python</span>
+              </label>
+              <label class="checkbox-option">
+                <input type="checkbox">
+                <span class="checkbox-custom"></span>
+                <span>Java</span>
+              </label>
+            </div>
+          </div>
+  
+          <div class="filter-buttons">
+            <button class="primary-button">Застосувати</button>
+            <button class="secondary-button">Скинути</button>
+          </div>
+        </div>
+        <div class="filter-background">
+          <div class="products-grid">
+          <div class="product-card" data-country="Java" data-milk="20+ кілометрів">
+            <img src="img/software-experts-gmbh-logo.jpg" alt="Декаф Флет Уайт" class="product-image">
+            <h3 class="product-title">Software experts GmbH</h3>
+            <p class="product-description">
+               Перспективна IT компанія у Ганновері, що набирає нових учнів. Відстань від вас - 20+ кілометрів. Мова програмування - Java.
+            </p>
+            <div class="product-footer">
+              <span class="product-price">Навчання <br> 2 роки</span>
+              <button class="add-to-cart">
+                <img src="img/button_basket.png" alt="Додати в кошик">
+                <span>Подати заявку</span>
+              </button>
+              
+            </div>
+          </div>
+          <div class="product-card" data-country="C++" data-milk="У вашому місті">
+            <img src="img/deister.jpg" alt="Декаф Флет Уайт" class="product-image">
+            <h3 class="product-title">Deister Electronic</h3>
+            <p class="product-description">
+              IT компанія що базується на кодуванні сейфів і дверей. Знаходиться у вашому місті. Мова програмування C++.
+            </p>
+            <div class="product-footer">
+              <span class="product-price">Навчання <br> 3 роки</span>
+              <button class="add-to-cart">
+                <img src="img/button_basket.png" alt="Додати в кошик">
+                <span>Подати заявку</span>
+              </button>
+            </div>
+          </div>
+          <div class="product-card"  data-country="Java" data-milk="20+ кілометрів">
+            <img src="img/michaelwessel_logo.jfif" alt="Декаф Флет Пінк" class="product-image">
+            <h3 class="product-title">Michael Wessel Technologie GmbH</h3>
+            <p class="product-description">
+              IT компанія яка займається кібербезпекою та консультаціями. Відстань від вас - 20+ км. Мова програмування Java.
+            </p>
+            <div class="product-footer">
+              <span class="product-price">Навчання <br>3 роки</span>
+              <button class="add-to-cart">
+                <img src="img/button_basket.png" alt="Додати в кошик">
+                <span>Подати заявку</span>
+              </button>
+            </div>
+          </div>
+          <div class="product-card"  data-country="Python" data-milk="20+ кілометрів">
+            <img src="img/einsnulleins_logo.jfif" alt="Декаф Флет Бейж" class="product-image">
+            <h3 class="product-title">Еinsnulleins Hannover IT-Service</h3>
+            <p class="product-description">
+              IT сервіс що допомогає вирішувати проблеми різних типів. Відстань від вас - 20+ кілометрів. Мова програмування Python.
+            </p>
+            <div class="product-footer">
+              <span class="product-price">Навчання <br> 2 роки </br> </span>
+              <button class="add-to-cart">
+                <img src="img/button_basket.png" alt="Додати в кошик">
+                <span>Подати зявку</span>
+              </button>
+            </div>
+          </div>
+          <div class="product-card" data-country="HTML/CSS"  data-milk="50+ кілометрів">
+            <img src="img/itgain.gif" alt="Декаф Флет Перпл" class="product-image">
+            <h3 class="product-title">IT Gain</h3>
+            <p class="product-description">
+              IT кампанія, що повністю базується на сайтобудуванні за допомогою HTML, CSS. Відстань від вас - 50+ кілометрів
+            </p>
+            <div class="product-footer">
+              <span class="product-price">Навчання <br> 2 роки</span>
+              <button class="add-to-cart">
+                <img src="img/button_basket.png" alt="Додати в кошик">
+                <span>Подати заявку</span>
+              </button>
+            </div>
+          </div>
+          <div class="product-card" data-country="JS" data-milk="50+ кілометрів">
+            <img src="img/hanovatech_logo.jfif" alt="Декаф Флет Браун" class="product-image">
+            <h3 class="product-title">HanovaTech</h3>
+            <p class="product-description">
+              IT компанія яка повністю пропонує роботу в онлайн форматі. Відстань від вас - 50+ кілометрів. Мова програмування JS.
+            </p>
+            <div class="product-footer">
+              <span class="product-price">Навчання <br> 2 роки  </span>
+              <button class="add-to-cart">
+                <img src="img/button_basket.png" alt="Додати в кошик">
+                <span>Подати заявку</span>
+              </button>
+            </div>
+          </div>
+          </div>
+          <div class="pagination">
+          <button class="secondary-button">Назад</button>
+          <div class="page-numbers">
+            <button class="page-button active">1</button>
+            <button class="page-button">2</button>
+            <button class="page-button active">3</button>
+          </div>
+          <button class="secondary-button">Вперед</button>
+          </div>
+        </div>
+    </section>
+
+    <div class="map-container">
+      <iframe class="map-image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21431.11997589536!2d35.14271891091309!3d47.822349212491616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc60add362d0c3%3A0x49309f6702826a75!2z0J_QsNGA0Log0J_QvtCx0LXQtNGL!5e0!3m2!1sru!2spl!4v1746267276333!5m2!1sru!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-background">
+        <div class="footer-logo">
+            <img src="img/Logo.png" alt="Logo" class="logo">
+        </div>
+      <div class="social-links">
+            <a href="#" class="social-link">
+              <img src="img/pinterest.png" alt="Pinterest">
+            </a>
+            <a href="#" class="social-link">
+              <img src="img/ig.png" alt="Instagram">
+            </a>
+            <a href="#" class="social-link">
+              <img src="img/youtube.png" alt="youtube">
+            </a>
+          </div>
+      </div>
+      
+      <div class="footer-sections">
+
+        <div class="footer-section">
+          <h3 class="footer-title">Медіа</h3>
+          <ul class="footer-links">
+            <li><a href="#">Інстаграм</a></li>
+            <li><a href="#">Фейсбук</a></li>
+            <li><a href="#">Правова інформація</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3 class="footer-title">Контакти</h3>
+          <div class="contact-info">
+            <img src="img/adress.png" alt="Адреса" class="contact-icon1">
+            <p>Wilhelm-Hess-Str. 9, 30890 Barsinghausen</p>
+          </div>
+          <div class="contact-info">
+            <img src="img/phone.png" alt="Телефон" class="contact-icon2">
+            <p>+49 16091440271</p>
+          </div>
+        </div>
+      </div>
+      <span class="developer">РОЗРОБНИК</span>
+    </div>
+  </footer>
+  <div id="modal-login" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <h2>Введіть дані</h2>
+    <input type="tel" placeholder="+380 .. ... .." />
+    <input type="email" placeholder="Введіть електронну пошту" />
+    <input type="password" placeholder="Введіть пароль" />
+    <button class="login-submit" disabled>Увійти</button>
+  </div>
+</div>
+
+</body>
+</html>
